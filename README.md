@@ -11,7 +11,7 @@ Translate anything you highlight and shows translate in bubble notification!
 4. :grey_question::grey_question::grey_question:
 5. If you are used Ubuntu 14.04 ( as i am ) you will see little nice bubble with translated text
    ( from English to Russian by default)
-## I haven't tested this script on another OS(:clap:), and will never do. But you may.
+ I haven't tested this script on another OS(:clap:), and will never do. But you may.
 
 # How to run script in a background
 
