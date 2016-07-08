@@ -31,7 +31,7 @@ def translate(text, langPair='en-ru'):
 	return json.loads(response.read())
 
 def kEvent(event):
-	if event.Key == 'P_Begin': # 73 is '5'
+	if event.Key == 'P_Begin': # P_Begin is '5' on a numpad
 		text = getHighlightedText()
 		message = u''.join(translate(getHighlightedText())["text"]).encode('utf-8').strip()
 		sendMessage(message.replace("-", " "))
