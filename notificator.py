@@ -31,11 +31,14 @@ def translate(text, langPair='en-ru'):
 	return json.loads(response.read())
 
 def kEvent(event):
-	if event.Key == 'P_Begin': # P_Begin is '5' on a numpad
-		text = getHighlightedText()
-		message = u''.join(translate(getHighlightedText())["text"]).encode('utf-8').strip()
-		sendMessage(message.replace("-", " "))
-
+	try:
+		if event.Key == 'P_Begin': # P_Begin is '5' on a numpad
+			text = getHighlightedText()
+			message = u''.join(translate(getHighlightedText())["text"]).encode('utf-8').strip()
+			sendMessage(message.replace("-", " "))
+	except:
+		return
+	
 if __name__ == '__main__':
 	# Setting up hook manager
 	hookManager = pyxhook.HookManager()
