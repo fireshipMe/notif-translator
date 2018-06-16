@@ -1,26 +1,26 @@
 # Notification translator
 
-Translate anything you highlight and shows translate in bubble notification!
+Translates anything you highlight and shows translate in bubble notification!
 
 # Basic usage
 
 1. Download both notificator.py and pyxhook.py files.
-2. In a terminal :
+2. In terminal :
    > python notification.py 
 3. Highlight text anywhere and press button 5 ( on a little square keyboard with nums a.k.a numpad )
 4. :grey_question::grey_question::grey_question:
-5. If you are used Ubuntu 14.04 ( as i am ) you will see little nice bubble with translated text
+5. If you are using Ubuntu 14.04 ( as i do ) you will see little nice bubble with translated text
    ( from English to Russian by default)
- I haven't tested this script on another OS(:clap:), and will never do. But you may.
+ I haven't tested this script on another OS's(:clap:), and will never do. But you may.
 
 # How to run script in a background
 
-1. Make a script executable:
+1. Make script executable:
    > chmod +x notificator.py
 2. Use nohup linux command!
    > nohup /path/to/notificator.py & 
    ( And dont forget about **&** )
-3. It will be a nice idea to add nohup to autorun.
+3. It will be nice idea to add nohup to autorun.
 
 # Changing translation languages.
 
